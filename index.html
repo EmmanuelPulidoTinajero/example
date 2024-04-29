@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boutique Margarita: Piñatas únicas y personalizadas para toda ocasión.">
+    <title>Boutique Margarita - Piñatas</title>
+</head>
+<body>
+    <header>
+        <h1>Boutique Margarita</h1>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#personalizar">Personalizar</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" aria-label="Inicio">
+            <h2>Bienvenidos a Boutique Margarita</h2>
+            <p>Encuentra la piñata perfecta para tu celebración o crea una completamente personalizada.</p>
+            <video controls aria-label="Video de introducción">
+                <source src="videos/boutique-intro.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </section>
+
+        <section id="catalogo" aria-label="Catálogo de productos">
+            <h2>Nuestro Catálogo</h2>
+            <div>
+                <article>
+                    <h3>Piñata Clásica</h3>
+                    <img src="images/pinata-clasica.jpg" alt="Piñata Clásica">
+                    <p>Piñata tradicional de siete picos, colorida y divertida.</p>
+                </article>
+                <article>
+                    <h3>Piñata de Superhéroe</h3>
+                    <img src="images/pinata-superheroe.jpg" alt="Piñata de Superhéroe">
+                    <p>Personaliza tu piñata con tu superhéroe favorito.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="personalizar" aria-label="Personaliza tu piñata">
+            <h2>Personaliza tu Piñata</h2>
+            <form aria-labelledby="personaliza-form">
+                <label for="modelo">Modelo de piñata:</label>
+                <select id="modelo" name="modelo">
+                    <option value="clasica">Clásica</option>
+                    <option value="superheroe">Superhéroe</option>
+                </select>
+                <label for="color">Color principal:</label>
+                <input type="color" id="color" name="color">
+                <label for="mensaje">Mensaje especial en la piñata:</label>
+                <input type="text" id="mensaje" name="mensaje">
+                <button type="submit">Crear Piñata</button>
+            </form>
+        </section>
+
+        <section id="precios" aria-label="Tabla de precios">
+            <h2>Precios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Piñata</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Piñata Clásica</td>
+                        <td>$20.00 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Piñata de Superhéroe</td>
+                        <td>$30.00 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Piñata Personalizada</td>
+                        <td>Desde $40.00 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="testimonios" aria-label="Testimonios de clientes">
+            <h2>Testimonios de Clientes</h2>
+            <ul>
+                <li>"Las piñatas son increíbles y el servicio es excepcional. - María"</li>
+                <li>"¡La piñata de superhéroe fue la sensación de la fiesta! - Carlos"</li>
+            </ul>
+        </section>
+
+        <section id="contacto" aria-label="Formulario de contacto">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes preguntas? ¿Necesitas ayuda? ¡Estamos aquí para asistirte!</p>
+            <form aria-labelledby="contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="consulta">Consulta:</label>
+                <textarea id="consulta" name="consulta" required></textarea>
+                <button type="submit">Enviar Consulta</button>
+            </form>
+        </section>
+
+        <section id="descargas" aria-label="Descargas">
+            <h2>Descargas</h2>
+            <a href="downloads/piñata-care-instructions.pdf" download="Piñata Care Instructions.pdf">Descargar Instrucciones de Cuidado para Piñatas</a>
+        </section>
+    </main>
+
+    <footer aria-label="Pie de página">
+        <p>© 2024 Boutique Margarita. Todos los derechos reservados.</p>
+        <p>Ubícanos:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7070808731036!2d-99.16510468509384!3d19.432607986887305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92c04000001%3A0xa68c3c74b3707b3!2sZ%C3%B3calo!5e0!3m2!1ses-419!2smx!4v1597689656305!5m2!1ses-419!2smx" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <a href="#privacidad">Política de Privacidad</a>
+    </footer>
+</body>
+</html>
